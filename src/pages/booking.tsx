@@ -19,31 +19,8 @@ import { createVisitByPatient } from '@/lib/visits';
 import dayjs from 'dayjs';
 import { getPatients } from '@/lib/manageVisits';
 import { createVisitByReceptionist } from '@/lib/visits';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-/*
- keep track of : 
-    1- user info
-    2- speciality
-    3- doctor 
-    4- date
-    5- time
-
-datepicker component receives : 
-    1- month (default to now)    
-    2- doctor ID 
-    3- call back when (time is changed) --> changes date and time in parent
-
-keeps track of : 
-    1- blocked dates 
-    2- blocked times 
-    3- selected date
-    4- selected time
-
-fetches doctor's appointments in the passed month
-*/
-
 
 
 const BookingForm = () => {
